@@ -32,8 +32,8 @@
 	--text-accent-hover: #F4A261;
 	--text-on-accent: var(--background-primary)/* #002C3D */
 	;
-	--text-selection: #001219;
-	--text-highlight-bg: #2A9D8FB3;
+	--text-selection: var(--text-muted);
+	--text-highlight-bg: var(--interactive-normal) /* #94D2BD */;
 	--text-highlight-bg-active: #E9C46A40;
 	--text-error: #540b0e;
 	--text-error-hover: #9b2226;
@@ -363,6 +363,11 @@ body.plugin-sliding-panes-rotate-header .workspace>.mod-root>.workspace-leaf>.wo
 	text-align: center;
 }
 
+.nav-file-title.is-being-dragged:not(:hover) .nav-file-title-content, 
+.nav-folder-title.is-being-dragged{
+	color: var(--background-modifier-form-field-highlighted);
+}
+
 .nav-file-title,
 .nav-folder-title {
 	margin-left: 2px;
@@ -529,6 +534,12 @@ button.mod-warning {
 }
 
 /* text stuff */
+
+.markdown-preview-view mark, 
+.cm-s-obsidian span.cm-formatting-highlight, 
+.cm-s-obsidian span.cm-highlight {
+	color: var(--background-modifier-form-field-highlighted);
+}
 
 strong > em, .cm-strong.cm-em {
 	font-family: var(--default-font) !important;
@@ -972,7 +983,8 @@ input {
 	font-family: var(--default-font) !important;
 }
 
-.document-search-input, .document-replace-input {
+.document-search-input, 
+.document-replace-input {
 	background-color: var(--background-modifier-form-field-highlighted) !important;
 }
 
