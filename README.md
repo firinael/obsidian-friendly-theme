@@ -8,4 +8,4 @@ HIGHLY recommended using either the Tabs plugin or Sliding Panes. It has a bunch
 ## to-do
 - [ ] fix tabs top margin bug (please someone help)
 
-![screenshot](https://user-images.githubusercontent.com/67032657/139351465-5114677c-71d2-4b00-8c17-ff672167094b.png)
+![screenshot.png](https://github.com/firinael/obsidian-friendly-theme/blob/main/screenshot.png?raw=true)
