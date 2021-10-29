@@ -553,6 +553,11 @@ del, .cm-strikethrough{
 	text-decoration-color: var(--text-error);
 }
 
+a.footnote-link {
+	text-decoration: none;
+	transition: .2s;
+}
+
 .cm-s-obsidian .cm-strong,
 strong,
 .cm-s-obsidian .cm-strong.cm-quote {
