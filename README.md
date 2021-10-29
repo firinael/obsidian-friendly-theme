@@ -1,5 +1,4 @@
 # obsidian-friendly-theme
-Nice dark mode theme I scrapped together.
 
 Using fonts: JetBrains Mono, iA Writer Quattro V, Petrona, Ranille, Harlow Solid.
 
