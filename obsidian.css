@@ -535,6 +535,10 @@ button.mod-warning {
 
 /* text stuff */
 
+.cm-s-obsidian .cm-url:not(:hover) {
+	color: var(--interactive-normal) !important;
+}
+
 .markdown-preview-view mark, 
 .cm-s-obsidian span.cm-formatting-highlight, 
 .cm-s-obsidian span.cm-highlight {
