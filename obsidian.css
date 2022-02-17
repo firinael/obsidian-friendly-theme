@@ -535,17 +535,23 @@ button.mod-warning {
 
 /* text stuff */
 
-.cm-s-obsidian .cm-url:not(:hover) {
-	color: var(--interactive-normal) !important;
-}
-
 .markdown-preview-view mark, 
 .cm-s-obsidian span.cm-formatting-highlight, 
 .cm-s-obsidian span.cm-highlight {
 	color: var(--background-modifier-form-field-highlighted);
 }
 
-strong > em, .cm-strong.cm-em {
+
+strong > em,
+.cm-strong.cm-em  {
+	color: var(--interactive-accent-hover) !important;
+	font-style: normal;
+	font-family: var(--alt-font) !important;
+	font-size: 1.26em !important;
+}
+
+.cm-em,
+em {
 	font-family: var(--default-font) !important;
 	font-size: unset !important;
 	font-style: italic;
@@ -555,6 +561,10 @@ strong > em, .cm-strong.cm-em {
 del, .cm-strikethrough{
 	color: var(--text-faint);
 	text-decoration-color: var(--text-error);
+}
+
+.cm-s-obsidian .cm-url:not(:hover) {
+	color: var(--interactive-normal) !important;
 }
 
 a.footnote-link {
@@ -621,13 +631,6 @@ strong,
 	font-family: var(--font-monospace) !important;
 }
 
-.cm-em,
-em {
-	color: var(--interactive-accent-hover) !important;
-	font-style: normal;
-	font-family: var(--alt-font) !important;
-	font-size: 126%;
-}
 
 .markdown-preview-view,
 .cm-s-obsidian {
@@ -1353,8 +1356,8 @@ blockquote h5 {
 /* center and cite */
 
 .cen {
-	display: block;
-	text-align: center;
+	display: block !important;
+	text-align: center !important;
 }
 
 .cit {
@@ -1920,4 +1923,13 @@ input[type=checkbox]:checked {
 .lt-ignorecontainer button:hover {
 	background-color: var(--interactive-accent);
 	color: var(--background-modifier-form-field-highlighted) !important;
+}
+
+/* changelog plugin */
+
+.github-btn,
+.btn-previous,
+.btn-next {
+	margin-right: 10px;
+	margin-left: 10px;
 }
