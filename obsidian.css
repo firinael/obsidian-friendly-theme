@@ -292,6 +292,10 @@
 	color: var(--text-accent-b);
 }
 
+.workspace-leaf.mod-active .workspace-leaf-content .view-header {
+	border-top: 0px;
+}
+
 .workspace-tab-header:hover,
 .nav-action-button:hover,
 .nav-action-button.is-active:hover {
@@ -403,6 +407,28 @@ body.plugin-sliding-panes-rotate-header .workspace>.mod-root>.workspace-leaf>.wo
 }
 
 /* buttons */
+
+.community-theme.is-selected button.mod-cta {
+	background-color: var(--interactive-accent);
+}
+
+.community-theme.is-selected button.mod-cta:hover {
+	background-color: var(--interactive-accent-hover);
+}
+
+.community-theme.is-selected .clickable-icon svg {
+	color: var(--background-primary);
+	transition: .2s !important;
+}
+
+.community-theme.is-selected .community-theme-remove-button {
+	transition: .2s;
+	background-color: var(--interactive-accent);
+}
+
+.community-theme.is-selected .clickable-icon:hover svg {
+	color: var(--text-muted) !important;
+}
 
 .cMenuSettingsButton.cMenuSettingsButtonRefresh,
 .cMenuSettingsButton.cMenuSettingsButtonAdd {
