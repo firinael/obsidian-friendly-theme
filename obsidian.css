@@ -3,7 +3,15 @@
 }
 
 .theme-dark {
-	--default-font: "iA Writer Quattro S";
+
+	--h1: 2.5em;
+	--h2: 2em;
+	--h3: 1.6em;
+	--h4: 1.25em;
+	--h5: 1.12em;
+	--h6: 1.12em;
+
+	--default-font: "iA Writer Quattro V Regular";
 	--header-font: "Ranille", serif;
 	--alt-font: "Harlow Solid", serif;
 	--mermaid-font: "Ranille", "Segoe UI", serif;
@@ -292,10 +300,6 @@
 	color: var(--text-accent-b);
 }
 
-.workspace-leaf.mod-active .workspace-leaf-content .view-header {
-	border-top: 0px;
-}
-
 .workspace-tab-header:hover,
 .nav-action-button:hover,
 .nav-action-button.is-active:hover {
@@ -407,28 +411,6 @@ body.plugin-sliding-panes-rotate-header .workspace>.mod-root>.workspace-leaf>.wo
 }
 
 /* buttons */
-
-.community-theme.is-selected button.mod-cta {
-	background-color: var(--interactive-accent);
-}
-
-.community-theme.is-selected button.mod-cta:hover {
-	background-color: var(--interactive-accent-hover);
-}
-
-.community-theme.is-selected .clickable-icon svg {
-	color: var(--background-primary);
-	transition: .2s !important;
-}
-
-.community-theme.is-selected .community-theme-remove-button {
-	transition: .2s;
-	background-color: var(--interactive-accent);
-}
-
-.community-theme.is-selected .clickable-icon:hover svg {
-	color: var(--text-muted) !important;
-}
 
 .cMenuSettingsButton.cMenuSettingsButtonRefresh,
 .cMenuSettingsButton.cMenuSettingsButtonAdd {
@@ -694,6 +676,25 @@ strong,
 	line-height: normal;
 }
 
+.markdown-preview-view h1{
+	font-size: var(--h1);
+}
+.markdown-preview-view h2{
+	font-size: var(--h2);
+}
+.markdown-preview-view h3{
+	font-size: var(--h3);
+}
+.markdown-preview-view h4{
+	font-size: var(--h4);
+}
+.markdown-preview-view h5{
+	font-size: var(--h5);
+}
+.markdown-preview-view h6{
+	font-size: var(--h6);
+}
+
 h1,
 h2,
 h3,
@@ -703,64 +704,41 @@ h5,
 	font-family: var(--header-font);
 }
 
-.cm-header-1,
-h1 {
-	font-size: 2.5em !important;
-}
-
 h1 {
 	border-bottom: 2px solid var(--text-faint);
 }
 
 h1::before {
 	content: "#   ";
-	font-size: .5em;
+	font-size: .5em !important;
 	color: var(--text-faint);
 }
 
-.cm-header-2,
-h2 {
-	font-size: 2em !important;
-}
 
 h2::before {
 	content: "##  ";
-	font-size: .5em;
+	font-size: .5em !important;
 	color: var(--text-faint);
 }
 
-.cm-header-3,
-h3 {
-	font-size: 1.6em !important;
-}
 
 h3::before {
 	content: "### ";
-	font-size: .5em;
+	font-size: .5em !important;
 	color: var(--text-faint);
 }
 
-.cm-header-4,
-h4 {
-	font-size: 1.25em !important;
-}
 
 h4::before {
 	content: "####";
-	font-size: .5em;
+	font-size: .5em !important;
 	color: var(--text-faint);
 }
 
-.cm-header-5,
-.cm-header-6,
-h5,
-h6 {
-	font-size: 1.12em !important;
-}
 
 .cm-s-obsidian .HyperMD-header>span>span:first-child {
 	color: var(--text-faint);
-	font-size: 1em !important;
+	font-size: 16px !important;
 }
 
 .collapse-icon {
@@ -1463,6 +1441,19 @@ button.kanban-plugin__new-item-button,
 
 .kanban-plugin__item-postfix-button:hover {
 	color: var(--text-normal) !important;
+}
+.theme-dark .kanban-plugin__lane .kanban-plugin__action-confirm-wrapper .kanban-plugin__confirm-action-button:hover {
+	background-color: var(--text-error-hover);
+}
+
+.theme-dark .kanban-plugin__lane .kanban-plugin__action-confirm-wrapper {
+	background-color: var(--background-modifier-form-field-highlighted);
+	border-radius: var(--radius-l);
+	border-color: transparent;
+}
+
+.theme-dark .kanban-plugin__action-confirm-wrapper .kanban-plugin__action-confirm-text {
+	color: var(--text-error-hover);
 }
 
 .kanban-plugin__lane-action-cancel {
