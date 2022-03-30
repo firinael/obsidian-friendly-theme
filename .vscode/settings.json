@@ -1,3 +1,17 @@
 {
-    "favorites.sortOrder": "DESC"
+    "favorites.sortOrder": "DESC",
+    "favorites.resources": [
+        {
+            "filePath": "vscode-vfs://github/firinael/obsidian-friendly-theme/obsidian.css",
+            "group": "Default"
+        },
+        {
+            "filePath": "anso\\default.yml",
+            "group": "Default"
+        },
+        {
+            "filePath": "obsidian\\themes\\obsidian-friendly-theme.css",
+            "group": "Default"
+        }
+    ]
 }
