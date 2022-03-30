@@ -941,6 +941,14 @@ tr:first-child th:first-child {
 
 /* modals */
 
+.setting-delete-hotkey {
+	transition: .2s;
+}
+
+.setting-delete-hotkey:hover {
+	background-color: var(--text-error-hover);
+}
+
 .menu-separator {
 	background-color: var(--background-secondary);
 	height: 2px;
