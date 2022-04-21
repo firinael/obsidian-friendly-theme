@@ -1,6 +1,6 @@
 # obsidian-friendly-theme
 
-Using fonts: JetBrains Mono, iA Writer Quattro S(tatic), Ranille, Harlow Solid.
+Using fonts: JetBrains Mono, iA Writer Quattro S(tatic), Ranille, and Harlow.
 
 HIGHLY recommended using either the Tabs plugin or Sliding Panes. It has a bunch of CSS for those and some other plugins.
 
