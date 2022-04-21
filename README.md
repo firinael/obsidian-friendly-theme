@@ -7,9 +7,9 @@ Supports:
 - Quick Explorer plugin;
 - cMenu plugin;
 - Alternative table styling (`excel` or `excelite` class in frontmatter);
-- Center and cite (`<b class=cen>centered text</b>` or `<b class=cit>your citation</b>`);
+- Center and cite styling (`<b class=cen>centered text</b>` or `<b class=cit>source</b>`);
 - Calendar plugin;
-- Clean/join note embeds (`clean-embeds` in frontmatter);
+- Clean and join note embeds (`clean-embeds` in frontmatter);
 - LanguageTool plugin; 
 
 Using fonts: JetBrains Mono, iA Writer Quattro S(tatic), Ranille, and Harlow.
