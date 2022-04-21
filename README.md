@@ -14,7 +14,7 @@ Supports:
 - Clean and join note embeds (`clean-embeds` in frontmatter);
 - LanguageTool plugin; 
 
-Using fonts: JetBrains Mono, iA Writer Quattro S(tatic), Ranille, and Harlow.
+Using fonts: JetBrains Mono, iA Writer Quattro, Ranille, and Harlow.
 
 HIGHLY recommended using either the **Tabs plugin** or Sliding Panes. It has a bunch of CSS for those.
 
