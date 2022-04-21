@@ -3,7 +3,7 @@
 This ain't too fancy since I don't have the time or skill for much, but it does what you'd expect and works well enough.
 
 Custom support:
-- ITS-like asides, image captioning and positioning;
+- ITS-like asides, image captioning and positioning (no callouts because I don't understand them yet);
 - Kanban plugin;
 - Page-breaking on print with double line-break (`---` in two consecutive lines);
 - Quick Explorer plugin;
