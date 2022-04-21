@@ -1,5 +1,7 @@
 # obsidian-friendly-theme
 
+This ain't too fancy since I don't have the time or skill for much, but it does what you'd expect and works well enough.
+
 Supports:
 - ITS-like asides, image captioning and positioning;
 - Kanban plugin;
