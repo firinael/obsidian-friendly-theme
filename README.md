@@ -2,7 +2,7 @@
 
 This ain't too fancy since I don't have the time or skill for much, but it does what you'd expect and works well enough.
 
-Supports:
+Custom support:
 - ITS-like asides, image captioning and positioning;
 - Kanban plugin;
 - Page-breaking on print with double line-break (`---` in two consecutive lines);
