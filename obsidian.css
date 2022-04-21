@@ -1432,6 +1432,7 @@ input:not(.search-input-container input):focus {
 .markdown-preview-view .excalidraw-svg img {
 	display      : block;
 	transition   : 0.2s;
+	min-width    : 30%;
 	max-width    : 75%;
 	margin-top   : 25px;
 	margin-bottom: 25px;
@@ -2180,4 +2181,282 @@ input[type="checkbox"]:checked {
 .btn-next {
 	margin-right: 10px;
 	margin-left : 10px;
+}
+
+/* below is stuff from SlRvb's ITS Theme */
+
+/* Lithou's Img-Grid CSS */
+.img-grid span.image-embed[alt*="."],
+span.image-embed[src*=grid],
+span.image-embed[alt*=grid],
+img[alt*=grid] {
+	display       : table-cell;
+	vertical-align: middle;
+	padding       : 3px;
+}
+
+.img-grid img[alt*="."],
+.image-embed[alt*=grid],
+img[alt*=grid],
+.image-embed[src*="#grid"] {
+	max-height: 30vh;
+}
+
+/*Fix Float Issues*/
+img[alt*=clear],
+.image-embed[src*="#clear"] {
+	clear: both;
+}
+
+img[alt*=unclr],
+.image-embed[src*="#unclr"] {
+	clear: none !important;
+}
+
+/*--Simplified Version--*/
+/*Image Locations*/
+/*Left & Right*/
+body .popover.hover-popover img[alt*=left],
+body .popover.hover-popover img[alt*=locl],
+body .popover.hover-popover img[src*="#locl"] img,
+body .popover.hover-popover .image-embed[alt*=left],
+body .popover.hover-popover .image-embed[alt*=locl],
+body .popover.hover-popover .image-embed[src*="#locl"] img,
+body span:not(.is-live-preview) img[alt*=left],
+body span:not(.is-live-preview) img[alt*=locl],
+body span:not(.is-live-preview) img[src*="#locl"] img,
+body span:not(.is-live-preview) .image-embed[alt*=left],
+body span:not(.is-live-preview) .image-embed[alt*=locl],
+body span:not(.is-live-preview) .image-embed[src*="#locl"] img {
+	float        : left;
+	margin-right : 2%;
+	margin-top   : 0px;
+	margin-bottom: 0px;
+}
+
+body .popover.hover-popover img[alt*=right],
+body .popover.hover-popover img[alt*=locr],
+body .popover.hover-popover img[src*="#locr"] img,
+body .popover.hover-popover .image-embed[alt*=right],
+body .popover.hover-popover .image-embed[alt*=locr],
+body .popover.hover-popover .image-embed[src*="#locr"] img,
+body span:not(.is-live-preview) img[alt*=right],
+body span:not(.is-live-preview) img[alt*=locr],
+body span:not(.is-live-preview) img[src*="#locr"] img,
+body span:not(.is-live-preview) .image-embed[alt*=right],
+body span:not(.is-live-preview) .image-embed[alt*=locr],
+body span:not(.is-live-preview) .image-embed[src*="#locr"] img {
+	float        : right;
+	margin-left  : 2%;
+	margin-bottom: 0px;
+}
+
+/*Height*/
+img[alt*="hmicro"],
+.image-embed[src*="#hmicro"] img {
+	height: var(--micro);
+}
+
+img[alt*="htiny"],
+.image-embed[src*="#htiny"] img {
+	height: var(--tiny);
+}
+
+img[alt*="hsmall"],
+.image-embed[src*="#hsmall"] img {
+	height: var(--small);
+}
+
+img[alt*="hs-med"],
+.image-embed[src*="#hs-med"] img {
+	height: var(--small-med);
+}
+
+img[alt*="hm-sm"],
+.image-embed[src*="#hs-sm"] img {
+	height: var(--med-small);
+}
+
+img[alt*="hmed"],
+.image-embed[src*="#hmed"] img {
+	height: var(--medium);
+}
+
+img[alt*="hm-tl"],
+.image-embed[src*="#hm-tl"],
+.image-embed[src*="#hm-tl"] img {
+	height: var(--med-tall);
+}
+
+img[alt*="htall"],
+.image-embed[src*="#htall"] img {
+	height: var(--tall);
+}
+
+/*Width*/
+img[alt*="wmicro"],
+.image-embed[src*="#wmicro"] img,
+.image-embed[alt*="#wmicro"]::after {
+	width: var(--micro);
+}
+
+img[alt*="wtiny"],
+.image-embed[src*="#wtiny"] img,
+.image-embed[src*="#wtiny"]::after {
+	width: var(--tiny);
+}
+
+img[alt*="wsmall"],
+.image-embed[src*="#wsmall"] img,
+.image-embed[src*="#wsmall"]::after {
+	width: var(--small);
+}
+
+img[alt*="ws-med"],
+.image-embed[src*="#ws-med"] img,
+.image-embed[src*="#ws-med"]::after {
+	width: var(--small-med);
+}
+
+img[alt*="wm-sm"],
+.image-embed[src*="#wm-sm"] img,
+.image-embed[src*="#wm-sm"]::after {
+	width: var(--med-small);
+}
+
+img[alt*="wmed"],
+.image-embed[src*="#wmed"] img,
+.image-embed[src*="#wmed"]::after {
+	width: var(--medium);
+}
+
+img[alt*="wm-tl"],
+.image-embed[src*="#wm-tl"] img,
+.image-embed[src*="#wm-tl"]::after {
+	width: var(--med-tall);
+}
+
+img[alt*="wtall"],
+.image-embed[src*="#wtall"] img,
+.image-embed[src*="#wtall"]::after {
+	width: var(--tall);
+}
+
+.theme-dark,
+.theme-light {
+	/*Sizes*/
+	--radius   : 0px;
+	--micro    : 70px;
+	--tiny     : 100px;
+	--small    : 200px;
+	--small-med: 300px;
+	--med-small: 400px;
+	--medium   : 500px;
+	--med-tall : 600px;
+	--tall     : 700px;
+}
+
+/*Captions*/
+.img-cap .image-embed::after,
+.image-embed[src*="#cap"]::after {
+	content         : attr(alt);
+	color           : var(--text-muted);
+	background-color: var(--background-modifier-form-field-highlighted);
+	font-style      : italic;
+	display         : block;
+	text-align      : center;
+	margin-top      : -30px;
+	margin-left     : auto;
+	margin-right    : auto;
+	padding         : 10px 10px 4px 10px;
+	width           : min-content;
+	min-width       : 30%;
+	max-width       : 75%;
+	border-radius   : 0 0 4px 4px;
+	box-shadow      : 3px 3px 3px 3px var(--background-modifier-form-field-highlighted);
+}
+
+/*----Comments/Asides----*/
+/*Hide Aside and hover to reveal it*/
+.aside-hide {
+	text-decoration : unset;
+	text-align      : justify;
+	color           : transparent;
+	font-weight     : unset;
+	float           : right;
+	position        : relative;
+	margin          : 0.5em;
+	margin-right    : -1em;
+	width           : 1.5em;
+	height          : 1.5em;
+	clear           : right;
+	overflow        : hidden;
+	background-color: transparent;
+	color           : transparent;
+	border-radius   : var(--radius-m);
+}
+
+.aside-hide:before {
+	display       : block;
+	border-bottom : 2px solid var(--interactive-accent);
+	content       : "(!)";
+	color         : none;
+	text-shadow   : 0 0 0 var(--text-muted);
+	font-size     : 14px;
+	padding-top   : 0.1em;
+	padding-left  : .3em;
+	padding-bottom: .3em;
+	margin-left   : -7px;
+	transition    : .2s;
+}
+
+.aside-hide:hover {
+	white-space     : normal;
+	text-overflow   : unset;
+	color           : var(--text-normal);
+	width           : min-content;
+	min-width       : 30%;
+	max-width       : 70%;
+	height          : unset;
+	background-color: var(--background-modifier-form-field-highlighted);
+	padding         : 6px 6px 6px 12px;
+	z-index         : 3;
+	border-radius   : var(--radius-full);
+	box-shadow      : var(--box-shadow);
+}
+
+/*Show Aside*/
+.aside-show {
+	text-decoration : unset;
+	text-align      : justify;
+	font-weight     : unset;
+	float           : right;
+	position        : relative;
+	margin-right    : -18%;
+	margin-bottom   : 0.2em;
+	clear           : right;
+	width           : min-content;
+	min-width       : 30%;
+	max-width       : 70%;
+	background-color: var(--background-modifier-form-field-highlighted);
+	padding         : 1em;
+	box-shadow      : var(--box-shadow);
+	border-radius   : var(--radius-full);
+	border-left     : 2px solid var(--interactive-accent);
+}
+
+/*Aside Without Other Styling*/
+.aside-clean {
+	text-decoration: unset;
+	text-align     : justify;
+	font-weight    : unset;
+	float          : right;
+	position       : relative;
+	margin-right   : -18%;
+	margin-bottom  : 0.2em;
+	clear          : right;
+	width          : min-content;
+	min-width      : 30%;
+	max-width      : 70%;
+	padding        : 0 1em;
 }
