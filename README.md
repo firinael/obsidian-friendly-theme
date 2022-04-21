@@ -22,4 +22,3 @@ HIGHLY recommended using either the **Tabs plugin** or Sliding Panes. It has a b
 - [ ] fix tabs top margin bug (please someone help)
 - [ ] add gradient to top of pane (also need help)
 
-![screenshot.png](https://github.com/firinael/obsidian-friendly-theme/blob/main/screenshot.png?raw=true)
