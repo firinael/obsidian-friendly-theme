@@ -1950,10 +1950,25 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
 
 /* kanban plugin */
 
+.kanban-plugin__item-input {
+	background-color: var(--background-modifier-form-field-highlighted);
+	margin-right    : 6px;
+}
+
+.kanban-plugin__item-input-wrapper {
+	width       : var(--lane-width);
+	margin-right: 6px;
+}
+
+.kanban-plugin__item-postfix-button-wrapper>button {
+	padding-right: 8px !important;
+}
+
 .kanban-plugin__item h1 {
 	font-size     : 1.4em;
 	margin-bottom : -8px;
 	padding-bottom: 3px;
+	border-bottom : none;
 }
 
 .kanban-plugin__lane-grip,
@@ -2011,6 +2026,10 @@ button.kanban-plugin__new-item-button,
 	background-color: var(--background-modifier-form-field-highlighted) !important;
 	border-bottom   : 2px solid var(--interactive-accent) !important;
 	border-radius   : 11px 4px 0px 0px !important;
+}
+
+.kanban-plugin__lane-input {
+	margin-right: 4px;
 }
 
 .kanban-plugin__lane-action-cancel:hover {
