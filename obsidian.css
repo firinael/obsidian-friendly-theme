@@ -32,15 +32,15 @@
 	--h5: 1.12em;
 	--h6: 1.12em;
 
-	--default-font   : "lexend deca light", monospace;
-	--header-font    : "ia writer quattro v black", serif;
-	--header-size    : 98%;
-	--alt-font       : "recursive sans casual", serif;
+	--default-font   : "Lexend Deca Light", monospace;
+	--header-font    : "iA Writer Quattro V Black", serif;
+	--header-size    : 100%;
+	--alt-font       : "Recursive Sans Casual", serif;
 	--alt-size       : 97%;
-	--mermaid-font   : "ia writer quattro v", "Segoe UI", serif;
-	--reveal-font    : "ia writer quattro v", "Segoe UI", serif;
-	--monospaced-font: "JetBrains Mono", monospace;
-	--font-monospace : "JetBrains Mono", monospace;
+	--mermaid-font   : "iA Writer Quattro V", "Segoe UI", serif;
+	--reveal-font    : "iA Writer Quattro V", "Segoe UI", serif;
+	--monospaced-font: "JetBrains Mono Black", monospace;
+	--font-monospace : "JetBrains Mono Black", monospace;
 	--monospace-size : 90%;
 
 	--opacity-translucency: 0.85;
@@ -1012,6 +1012,19 @@ h4::before {
 }
 
 /* lists */
+
+span.cm-formatting-list-ul {
+	visibility: hidden !important;
+}
+
+span.cm-formatting-list-ul:after {
+	content       : '• ';
+	margin-left   : -10px;
+	font-size     : 20px;
+	color         : var(--text-muted);
+	visibility    : visible !important;
+	vertical-align: middle;
+}
 
 li::marker {
 	color: var(--text-muted);
