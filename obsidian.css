@@ -1242,6 +1242,11 @@ tr:first-child th:first-child {
 	border: 0;
 }
 
+.community-plugin-info hr {
+	margin-top   : 8px;
+	margin-bottom: 8px;
+}
+
 .settings-search-container.vertical-tab-header-group .search-input-container input:focus {
 	border: 0;
 }
