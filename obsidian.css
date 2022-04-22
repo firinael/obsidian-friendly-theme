@@ -897,10 +897,13 @@ strong,
 .markdown-preview-view h4,
 .markdown-preview-view h5,
 .cm-header {
-	text-align   : left;
-	margin-top   : 33px;
+	text-align : left;
+	line-height: normal;
+}
+
+.markdown-preview-view h1 {
+	margin-top   : 16px;
 	margin-bottom: 33px;
-	line-height  : normal;
 }
 
 .markdown-preview-view h1 {
@@ -960,7 +963,7 @@ h3::before {
 }
 
 h4::before {
-	content  : "####";
+	content  : "#### ";
 	font-size: 0.5em !important;
 	color    : var(--text-faint);
 }
@@ -2259,15 +2262,29 @@ input[type="checkbox"]:checked {
 		border-spacing: 0px !important;
 	}
 
-	strong>em {
+	.theme-dark strong>em {
 		color: var(--text-muted) !important;
 	}
 
-	strong {
+	.theme-light h1 {
+		border-color: var(--text-accent);
+	}
+
+	.theme-light h1::before,
+	.theme-light h2::before,
+	.theme-light h3::before,
+	.theme-light h4::before,
+	.theme-light h5::before,
+	.theme-light h6::before,
+	.theme-light strong {
+		color: var(--text-accent)
+	}
+
+	.theme-dark strong {
 		color: black !important;
 	}
 
-	a {
+	.theme-dark a {
 		color: var(--background-modifier-form-field-highlighted);
 	}
 
