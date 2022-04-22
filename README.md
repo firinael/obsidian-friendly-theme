@@ -1,5 +1,7 @@
 # obsidian-friendly-theme
 
+## now has an alternate dark mode (Unfriendly)
+
 This ain't too fancy since I don't have the time or skill for much, but it does what you'd expect and works well enough.
 
 Custom support:
@@ -14,7 +16,7 @@ Custom support:
 - Clean and join note embeds (`clean-embeds` in frontmatter);
 - LanguageTool plugin; 
 
-Using fonts: JetBrains Mono, iA Writer Quattro, Ranille, and Harlow.
+Using fonts: JetBrains Mono, iA Writer Quattro, Ranille, Harlow, Lexend Deca, and Recursive Sans.
 
 HIGHLY recommended using either the **Tabs plugin** or Sliding Panes. It has a bunch of CSS for those.
 
