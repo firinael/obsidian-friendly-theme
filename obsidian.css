@@ -898,6 +898,10 @@ a.footnote-link {
 	transition     : 0.2s;
 }
 
+a.tag {
+	transition: .2s;
+}
+
 .cm-s-obsidian .cm-strong,
 strong,
 .cm-s-obsidian .cm-strong.cm-quote {
@@ -913,7 +917,23 @@ strong,
 }
 
 .cm-s-obsidian .cm-hashtag {
-	color: var(--text-accent-b) !important;
+	color     : var(--text-accent) !important;
+	transition: .2s;
+}
+
+.cm-s-obsidian .cm-hashtag:hover {
+	color: var(--text-accent-hover) !important;
+}
+
+.cm-hmd-internal-link:hover,
+.cm-url:hover {
+	color: var(--interactive-accent-hover) !important;
+}
+
+.cm-link,
+.cm-hmd-internal-link,
+.cm-url {
+	transition: .2s !important;
 }
 
 .markdown-preview-view code,
@@ -1662,6 +1682,14 @@ input:not(.search-input-container input):focus {
 }
 
 /* embeds */
+
+.internal-embed.file-embed.mod-empty:hover {
+	color: var(--interactive-accent-hover) !important;
+}
+
+.internal-embed.file-embed.mod-empty {
+	transition: .2s;
+}
 
 .markdown-preview-view .markdown-embed-content>.markdown-preview-view,
 .markdown-preview-view .markdown-embed-content>.markdown-preview-view h1 {
