@@ -2581,7 +2581,7 @@ img[alt*="wtall"],
 /*Hide Aside and hover to reveal it*/
 .aside-hide {
 	text-decoration : unset;
-	text-align      : justify;
+	text-align      : right;
 	color           : transparent;
 	font-weight     : unset;
 	float           : right;
@@ -2600,10 +2600,10 @@ img[alt*="wtall"],
 .aside-hide:before {
 	display       : block;
 	border-bottom : 2px solid var(--interactive-accent);
-	content       : "(!)";
+	content       : "?";
 	color         : none;
-	text-shadow   : 0 0 0 var(--text-muted);
-	font-size     : 14px;
+	text-shadow   : 0 0 0 var(--interactive-accent);
+	font-size     : 1em;
 	padding-top   : 0.1em;
 	padding-left  : .3em;
 	padding-bottom: .3em;
@@ -2611,16 +2611,24 @@ img[alt*="wtall"],
 	transition    : .2s;
 }
 
+.theme-light .aside-hide:before {
+	font-size     : 16px;
+	padding-left  : .5em;
+	padding-bottom: .5em;
+	margin-bottom : .5em;
+}
+
 .aside-hide:hover {
 	white-space     : normal;
 	text-overflow   : unset;
 	color           : var(--text-normal);
-	width           : min-content;
 	min-width       : 30%;
-	max-width       : 70%;
+	max-width       : 50%;
 	height          : unset;
 	background-color: var(--background-modifier-form-field-highlighted);
-	padding         : 6px 6px 6px 12px;
+	padding         : 0px 0px 6px 12px;
+	padding-right   : 6px;
+	right           : -6px;
 	z-index         : 3;
 	border-radius   : var(--radius-full);
 	box-shadow      : var(--box-shadow);
@@ -2636,9 +2644,8 @@ img[alt*="wtall"],
 	margin-right    : -18%;
 	margin-bottom   : 0.2em;
 	clear           : right;
-	width           : min-content;
 	min-width       : 30%;
-	max-width       : 70%;
+	max-width       : 50%;
 	background-color: var(--background-modifier-form-field-highlighted);
 	padding         : 1em;
 	box-shadow      : var(--box-shadow);
@@ -2649,15 +2656,14 @@ img[alt*="wtall"],
 /*Aside Without Other Styling*/
 .aside-clean {
 	text-decoration: unset;
-	text-align     : justify;
+	text-align     : right;
 	font-weight    : unset;
 	float          : right;
 	position       : relative;
 	margin-right   : -18%;
 	margin-bottom  : 0.2em;
 	clear          : right;
-	width          : min-content;
 	min-width      : 30%;
-	max-width      : 70%;
+	max-width      : 50%;
 	padding        : 0 1em;
 }
