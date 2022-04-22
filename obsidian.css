@@ -73,7 +73,7 @@
 
 	--interactive-accent      : var(--text-accent);
 	--interactive-accent-b    : var(--text-accent-b);
-	--interactive-accent-rgb  : 209, 30, 91;
+	--interactive-accent-rgb  : 238, 17, 102;
 	--interactive-hover       : var(--text-muted);
 	--interactive-accent-hover: var(--text-accent-hover);
 	--interactive-normal      : #3F84E5;
