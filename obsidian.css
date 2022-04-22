@@ -2550,6 +2550,15 @@ img[alt*="wtall"],
 	box-shadow      : 3px 3px 3px 3px var(--background-modifier-form-field-highlighted);
 }
 
+.theme-light .img-cap .image-embed::after,
+.theme-light .image-embed[src*="#cap"]::after {
+	content    : attr(alt);
+	color      : var(--text-muted);
+	font-style : italic;
+	font-family: var(--header-font);
+	padding    : 10px 10px 0px 10px;
+}
+
 /*----Comments/Asides----*/
 /*Hide Aside and hover to reveal it*/
 .aside-hide {
