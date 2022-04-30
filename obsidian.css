@@ -685,6 +685,11 @@ body.plugin-sliding-panes-rotate-header .workspace>.mod-root>.workspace-leaf>.wo
 
 /* buttons */
 
+.document-search-container .document-replace-buttons button {
+	color: var(--text-on-accent);
+	width: 100px;
+}
+
 .cMenuSettingsButton.cMenuSettingsButtonRefresh,
 .cMenuSettingsButton.cMenuSettingsButtonAdd {
 	background-color: var(--background-primary) !important;
@@ -1509,10 +1514,6 @@ input {
 	background-color: var(--interactive-accent-hover);
 }
 
-.document-search-container .document-replace-buttons button {
-	width: 100px;
-}
-
 .document-search-container .document-search-buttons button {
 	width: 55px !important;
 	color: var(--text-on-accent);
@@ -1736,6 +1737,12 @@ input:not(.search-input-container input):focus {
 	border-width : 2px 0px 0px 2px;
 	border-color : var(--background-secondary);
 	box-shadow   : var(--box-shadow);
+}
+
+.aside-show .internal-embed.image-embed.is-loaded img {
+	margin: 0 .8em 0 0;
+	clear : left;
+	float : left;
 }
 
 .obsidian-banner-wrapper {
@@ -2528,16 +2535,16 @@ span.image-embed[src*=grid],
 span.image-embed[alt*=grid],
 img[alt*=grid] {
 	display       : table-cell;
-	vertical-align: middle;
+	vertical-align: top;
 	padding       : 3px;
 }
 
-.img-grid img[alt*="."],
+/* .img-grid img[alt*="."],
 .image-embed[alt*=grid],
 img[alt*=grid],
 .image-embed[src*="#grid"] {
 	max-height: 30vh;
-}
+} */
 
 /*Fix Float Issues*/
 img[alt*=clear],
@@ -2706,9 +2713,8 @@ img[alt*="wtall"],
 	margin-left     : auto;
 	margin-right    : auto;
 	padding         : 10px 10px 4px 10px;
-	width           : min-content;
 	min-width       : 30%;
-	max-width       : 75%;
+	max-width       : 60%;
 	border-radius   : 0 0 4px 4px;
 	box-shadow      : 3px 3px 3px 3px var(--background-modifier-form-field-highlighted);
 }
@@ -2787,7 +2793,8 @@ img[alt*="wtall"],
 	float           : right;
 	position        : relative;
 	margin-right    : -18%;
-	margin-bottom   : 0.2em;
+	margin-bottom   : 1em;
+	margin-left     : .8em;
 	clear           : right;
 	min-width       : 30%;
 	max-width       : 50%;
@@ -2796,6 +2803,7 @@ img[alt*="wtall"],
 	box-shadow      : var(--box-shadow);
 	border-radius   : var(--radius-full);
 	border-left     : 2px solid var(--interactive-accent);
+	word-wrap       : normal;
 }
 
 /*Aside Without Other Styling*/
