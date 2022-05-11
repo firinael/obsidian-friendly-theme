@@ -59,7 +59,7 @@
 	--text-on-accent          : var(--background-primary);
 	--text-selection          : var(--text-highlight-bg-active);
 	--text-highlight-bg       : #E7CC88FF;
-	--text-highlight-bg-active: #E7CC88AA;
+	--text-highlight-bg-active: #E7CC8855;
 	--text-error              : darkred;
 	--text-error-hover        : red;
 
@@ -68,7 +68,7 @@
 	--interactive-accent-rgb  : 238, 17, 102;
 	--interactive-hover       : var(--text-muted);
 	--interactive-accent-hover: var(--text-accent-hover);
-	--interactive-normal      : #3F84E5;
+	--interactive-normal      : #CBFF8C;
 	--interactive-success     : var(--interactive-normal);
 
 	--background-modifier-border                : var(--background-primary);
@@ -191,7 +191,7 @@
 .theme-light .cm-strong.cm-em {
 	font-family: var(--alt-font) !important;
 	font-size  : var(--alt-size) !important;
-	color      : var(--text-highlight-bg) !important;
+	color      : var(--interactive-normal) !important;
 	font-weight: bold;
 }
 
@@ -864,6 +864,20 @@ button.mod-warning:hover,
 
 /* text stuff */
 
+.cm-s-obsidian span.obsidian-search-match-highlight {
+	background-color: var(--text-highlight-bg-active);
+}
+
+.markdown-rendered .search-highlight>div.is-active {
+	background-color: var(--text-highlight-bg);
+	mix-blend-mode  : multiply;
+}
+
+.markdown-rendered .search-highlight>div:not(.is-active) {
+	background-color: var(--text-highlight-bg-active);
+	mix-blend-mode  : normal;
+}
+
 .markdown-reading-view .markdown-preview-view code,
 .CodeMirror-code .CodeMirror-line .cm-inline-code,
 .CodeMirror-code .CodeMirror-line .cm-s-obsidian.cm-inline-code {
@@ -879,7 +893,7 @@ button.mod-warning:hover,
 
 strong>em,
 .cm-strong.cm-em {
-	color      : var(--interactive-accent-hover) !important;
+	color      : var(--interactive-normal) !important;
 	font-style : normal;
 	font-family: var(--alt-font) !important;
 	font-size  : var(--alt-size) !important;
@@ -915,7 +929,7 @@ a.tag {
 .cm-s-obsidian .cm-strong,
 strong,
 .cm-s-obsidian .cm-strong.cm-quote {
-	color      : var(--text-accent-hover);
+	color      : var(--interactive-accent-b);
 	font-family: var(--header-font);
 	font-size  : var(--header-size);
 	font-weight: normal;
@@ -949,7 +963,7 @@ strong,
 .markdown-preview-view code,
 .cm-inline-code,
 .cm-s-obsidian span.cm-inline-code {
-	color           : var(--interactive-accent-hover);
+	color           : var(--interactive-accent-b);
 	background-color: var(--background-modifier-form-field-highlighted) !important;
 	font-size       : 0.9em;
 }
@@ -1010,7 +1024,7 @@ strong,
 }
 
 .cm-hmd-codeblock {
-	color: var(--interactive-accent-hover);
+	color: var(--interactive-accent-b);
 }
 
 .markdown-preview-view {
@@ -1118,7 +1132,7 @@ h5::before {
 }
 
 .is-collapsed .collapse-icon {
-	color     : var(--interactive-accent-hover);
+	color     : var(--interactive-accent-b);
 	transition: 0.2s;
 }
 
@@ -1257,7 +1271,7 @@ ol ol {
 }
 
 li.is-collapsed .collapse-icon {
-	color: var(--interactive-accent-hover);
+	color: var(--interactive-accent-b);
 }
 
 /* scrollbar */
@@ -1946,8 +1960,8 @@ div:not(.CodeMirror-activeline)>.HyperMD-hr-bg {
 
 .markdown-preview-view hr,
 .cm-s-obsidian hr {
-	margin-top   : 25px !important;
-	margin-bottom: 30px !important;
+	margin-top   : 35px !important;
+	margin-bottom: 35px !important;
 }
 
 .HyperMD-hr-bg {
@@ -2254,7 +2268,7 @@ input[type="checkbox"]:checked {
 }
 
 .results .opener:not(.open) .collapse-icon svg {
-	color: var(--interactive-accent-hover);
+	color: var(--interactive-accent-b);
 }
 
 .results .opener .collapse-icon:hover svg {
@@ -2438,7 +2452,7 @@ input[type="checkbox"]:checked {
 	}
 
 	.theme-light h1 {
-		border-color: var(--text-accent);
+		border-color: var(--interactive-accent);
 	}
 
 	.theme-light h1::before,
@@ -2448,7 +2462,7 @@ input[type="checkbox"]:checked {
 	.theme-light h5::before,
 	.theme-light h6::before,
 	.theme-light strong {
-		color: var(--text-accent)
+		color: var(--interactive-accent)
 	}
 
 	.theme-dark strong {
@@ -2804,6 +2818,7 @@ img[alt*="wtall"],
 .aside-hide:hover {
 	white-space     : normal;
 	text-overflow   : unset;
+	word-wrap       : normal;
 	color           : var(--text-normal);
 	min-width       : 30%;
 	max-width       : 50%;
@@ -2816,6 +2831,7 @@ img[alt*="wtall"],
 	border-radius   : var(--radius-full);
 	box-shadow      : var(--box-shadow);
 	margin-bottom   : 1em;
+	word-break      : normal;
 }
 
 /*Show Aside*/
