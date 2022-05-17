@@ -470,6 +470,11 @@
 	margin-right: -4px;
 }
 
+.theme-light #quick-explorer .explorable:first-child::before {
+	content     : " / " !important;
+	margin-right: 0;
+}
+
 .qe-popup-menu .menu-item:not(.is-disabled):not(.is-label):hover:not(.selected) {
 	background-color: unset !important;
 	color           : unset !important;
@@ -1943,7 +1948,7 @@ div:not(.CodeMirror-activeline)>.HyperMD-hr-bg::after {
 	font-size       : 16px;
 	transform-origin: 50% 50%;
 	color           : var(--text-accent-hover) !important;
-	text-shadow     : 0 0 0 var(--interactive-accent) !important;
+	text-shadow     : none !important;
 	padding         : 8px;
 	background-color: var(--background-primary);
 }
