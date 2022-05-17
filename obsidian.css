@@ -2875,3 +2875,9 @@ img[alt*="wtall"],
 	padding        : 0 1em;
 	word-wrap      : normal;
 }
+
+/* graph styling */
+
+.graph-view.color-line {
+	color: var(--text-faint);
+}
