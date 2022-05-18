@@ -1886,11 +1886,21 @@ blockquote h5 {
 	text-shadow: none;
 }
 
-.code-block-copy-button,
-.copy-code-button {
-	display: none !important;
+.markdown-rendered button.copy-code-button {
+	border-radius: var(--radius-l);
+	color        : var(--text-on-accent);
 }
 
+.markdown-rendered button.copy-code-button:hover {
+	background-color: var(--interactive-accent-hover);
+}
+
+
+.markdown-rendered pre {
+	background-color: var(--background-modifier-form-field-highlighted);
+	border-radius   : var(--radius-full);
+	padding-top     : 12px;
+}
 
 .cm-s-obsidian .HyperMD-codeblock-bg,
 .cm-s-obsidian .HyperMD-codeblock-begin-bg,
