@@ -2480,6 +2480,21 @@ input[type="checkbox"]:checked {
 		color: var(--interactive-accent)
 	}
 
+
+	.theme-light h1,
+	.theme-light h2,
+	.theme-light h3,
+	.theme-light h4,
+	.theme-light h5,
+	.theme-light h6 {
+		color: black;
+	}
+
+	.theme-light strong {
+		font-weight: bolder;
+		color      : black;
+	}
+
 	.theme-dark strong {
 		color: black !important;
 	}
