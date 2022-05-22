@@ -1714,6 +1714,36 @@ input:not(.search-input-container input):focus {
 
 /* embeds */
 
+body .popover.hover-popover img[alt*=light],
+body .popover.hover-popover img[alt*=light],
+body .popover.hover-popover img[src*="#light"] img,
+body .popover.hover-popover .image-embed[alt*=light],
+body .popover.hover-popover .image-embed[alt*=light],
+body .popover.hover-popover .image-embed[src*="#light"] img,
+body span:not(.is-live-preview) img[alt*=light],
+body span:not(.is-live-preview) img[alt*=light],
+body span:not(.is-live-preview) img[src*="#light"] img,
+body span:not(.is-live-preview) .image-embed[alt*=light],
+body span:not(.is-live-preview) .image-embed[alt*=light],
+body span:not(.is-live-preview) .image-embed[src*="#light"] img {
+	background-color: white;
+}
+
+body .popover.hover-popover img[alt*=dark],
+body .popover.hover-popover img[alt*=dark],
+body .popover.hover-popover img[src*="#dark"] img,
+body .popover.hover-popover .image-embed[alt*=dark],
+body .popover.hover-popover .image-embed[alt*=dark],
+body .popover.hover-popover .image-embed[src*="#dark"] img,
+body span:not(.is-live-preview) img[alt*=dark],
+body span:not(.is-live-preview) img[alt*=dark],
+body span:not(.is-live-preview) img[src*="#dark"] img,
+body span:not(.is-live-preview) .image-embed[alt*=dark],
+body span:not(.is-live-preview) .image-embed[alt*=dark],
+body span:not(.is-live-preview) .image-embed[src*="#dark"] img {
+	background-color: var(--background-modifier-form-field-highlighted);
+}
+
 .internal-embed.file-embed.mod-empty:hover {
 	color: var(--interactive-accent-hover) !important;
 }
