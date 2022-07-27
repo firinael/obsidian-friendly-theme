@@ -1,5 +1,7 @@
 # obsidian-friendly-theme
 
+# transition to the new editor broke too much stuff, RIP this theme
+
 ## now has an alternate dark mode (Unfriendly)
 
 This ain't too fancy since I don't have the time or skill for much, but it does what you'd expect and works well enough.
